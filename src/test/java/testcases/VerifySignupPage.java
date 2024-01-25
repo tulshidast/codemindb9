@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class VerifySignupPage extends BaseTest {
 
-    @Test
+    @Test(description="Testing")
     public void verifySignupPage()
     {
         
