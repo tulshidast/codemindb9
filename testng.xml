@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<groups>
-		<run>
-			<include name="sanity"></include>
-			<include name="smoke"></include>
-		</run>
-	</groups>
-	<listeners>
-		<listener class-name="Utility.ListnerImpl"></listener>
-	</listeners>
-	<test thread-count="5" name="Test">
-		<classes>
-			<class name="testcases.BaseTest" />
-			<class name="testcases.VerifyHomePage" />
-			<class name="testcases.VerifyButStatusAndTableData" />
-		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcases.VerifyReportPageContaint"/>
+      <class name="testcases.VerifyHomePage"/>
+      <class name="testcases.VerifyButStatusAndTableData"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
