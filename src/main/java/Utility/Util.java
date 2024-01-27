@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,7 +31,7 @@ public class Util {
 
 	public WebDriver getDriver() {
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 		return driver;
 	}
 
