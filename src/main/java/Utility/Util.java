@@ -29,7 +29,7 @@ public class Util {
 	}
 
 	public WebDriver getDriver() {
-		WebDriverManager.edgedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new EdgeDriver();
 		return driver;
 	}
